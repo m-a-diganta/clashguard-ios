@@ -31,8 +31,8 @@ struct ContentView: View {
     }
 
     private func importSampleData() {
-        calendarViewModel.shifts = SampleData.shifts()
-        calendarViewModel.deadlines = SampleData.deadlines()
+        calendarViewModel.shifts = importViewModel.shifts
+        calendarViewModel.deadlines = importViewModel.deadlines
         clashAlertViewModel.loadClashes(
             shifts: calendarViewModel.shifts,
             deadlines: calendarViewModel.deadlines
