@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SwapBoardView: View {
     @ObservedObject var viewModel: SwapBoardViewModel
+    @State private var statusByClashID: [UUID: String] = [:]
 
     var body: some View {
         NavigationStack {
@@ -18,11 +19,23 @@ struct SwapBoardView: View {
                             .font(.caption)
                             .foregroundStyle(.secondary)
 
-                        HStack {
-                            Button("Offer swap") {}
+                        if let status = statusByClashID[clash.id] {
+                            Text(status)
+                                .font(.caption)
+                                .bold()
+                                .foregroundStyle(.teal)
+                        } else {
+                            HStack {
+                                Button("Offer swap") {
+                                    statusByClashID[clash.id] = "Swap requested"
+                                }
                                 .buttonStyle(.borderedProminent)
-                            Button("Offer up") {}
+
+                                Button("Offer up") {
+                                    statusByClashID[clash.id] = "Shift offered up"
+                                }
                                 .buttonStyle(.bordered)
+                            }
                         }
                     }
                     .padding(.vertical, 4)

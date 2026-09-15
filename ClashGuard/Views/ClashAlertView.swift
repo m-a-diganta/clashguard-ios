@@ -3,6 +3,7 @@ import SwiftUI
 struct ClashAlertView: View {
     @ObservedObject var viewModel: ClashAlertViewModel
     @ObservedObject var swapBoardViewModel: SwapBoardViewModel
+    @State private var sentClashIDs: Set<UUID> = []
 
     var body: some View {
         NavigationStack {
@@ -21,10 +22,15 @@ struct ClashAlertView: View {
 
                         Text(clash.summary())
 
-                        Button("Send to swap board") {
+                        Button {
                             swapBoardViewModel.flag(clash: clash)
+                            sentClashIDs.insert(clash.id)
+                        } label: {
+                            Text(sentClashIDs.contains(clash.id) ? "Sent to swap board" : "Send to swap board")
                         }
-                        .font(.caption)
+                        .buttonStyle(.bordered)
+                        .controlSize(.small)
+                        .disabled(sentClashIDs.contains(clash.id))
                     }
                     .padding(.vertical, 4)
                 }
