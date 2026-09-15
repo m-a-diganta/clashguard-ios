@@ -13,6 +13,9 @@
 		ECBB654930594F890024179F /* ClashRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654730594F890024179F /* ClashRecord.swift */; };
 		ECBB654A30594F890024179F /* RosterShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654830594F890024179F /* RosterShift.swift */; };
 		ECBB654B30594F890024179F /* AcademicDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654630594F890024179F /* AcademicDeadline.swift */; };
+		ECBB654F305953850024179F /* ImportRosterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654E305953850024179F /* ImportRosterUseCase.swift */; };
+		ECBB6550305953850024179F /* DetectClashUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654C305953850024179F /* DetectClashUseCase.swift */; };
+		ECBB6551305953850024179F /* FlagShiftForSwapUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654D305953850024179F /* FlagShiftForSwapUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		ECBB654630594F890024179F /* AcademicDeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicDeadline.swift; sourceTree = "<group>"; };
 		ECBB654730594F890024179F /* ClashRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashRecord.swift; sourceTree = "<group>"; };
 		ECBB654830594F890024179F /* RosterShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterShift.swift; sourceTree = "<group>"; };
+		ECBB654C305953850024179F /* DetectClashUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectClashUseCase.swift; sourceTree = "<group>"; };
+		ECBB654D305953850024179F /* FlagShiftForSwapUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagShiftForSwapUseCase.swift; sourceTree = "<group>"; };
+		ECBB654E305953850024179F /* ImportRosterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportRosterUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 		24C94539743BD59E324EDC0B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				ECBB654C305953850024179F /* DetectClashUseCase.swift */,
+				ECBB654D305953850024179F /* FlagShiftForSwapUseCase.swift */,
+				ECBB654E305953850024179F /* ImportRosterUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -174,6 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBB654F305953850024179F /* ImportRosterUseCase.swift in Sources */,
+				ECBB6550305953850024179F /* DetectClashUseCase.swift in Sources */,
+				ECBB6551305953850024179F /* FlagShiftForSwapUseCase.swift in Sources */,
 				6BE9E4998CF6885FC00D8BB8 /* ClashGuardApp.swift in Sources */,
 				B1058AD6F579C4FCA7ACCBC1 /* ContentView.swift in Sources */,
 				ECBB654930594F890024179F /* ClashRecord.swift in Sources */,
