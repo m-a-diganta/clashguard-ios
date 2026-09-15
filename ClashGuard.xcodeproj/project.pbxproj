@@ -9,17 +9,25 @@
 /* Begin PBXBuildFile section */
 		5922E9B7EBD25DB23968D205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B024E874BC21FEF7023DAF /* Assets.xcassets */; };
 		6BE9E4998CF6885FC00D8BB8 /* ClashGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DB67062432F428C349BEF /* ClashGuardApp.swift */; };
-		B1058AD6F579C4FCA7ACCBC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67563013A1324D55ADA95C /* ContentView.swift */; };
 		ECBB654930594F890024179F /* ClashRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654730594F890024179F /* ClashRecord.swift */; };
 		ECBB654A30594F890024179F /* RosterShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654830594F890024179F /* RosterShift.swift */; };
 		ECBB654B30594F890024179F /* AcademicDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654630594F890024179F /* AcademicDeadline.swift */; };
 		ECBB654F305953850024179F /* ImportRosterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654E305953850024179F /* ImportRosterUseCase.swift */; };
 		ECBB6550305953850024179F /* DetectClashUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654C305953850024179F /* DetectClashUseCase.swift */; };
 		ECBB6551305953850024179F /* FlagShiftForSwapUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654D305953850024179F /* FlagShiftForSwapUseCase.swift */; };
+		ECBB6556305956370024179F /* ImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6553305956370024179F /* ImportViewModel.swift */; };
+		ECBB6557305956370024179F /* MergedCalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6554305956370024179F /* MergedCalendarViewModel.swift */; };
+		ECBB6559305956370024179F /* ClashAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6552305956370024179F /* ClashAlertViewModel.swift */; };
+		ECBB655F305956650024179F /* SwapBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB655E305956650024179F /* SwapBoardView.swift */; };
+		ECBB6560305956650024179F /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB655B305956650024179F /* ImportView.swift */; };
+		ECBB6561305956650024179F /* ClashAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB655A305956650024179F /* ClashAlertView.swift */; };
+		ECBB6562305956650024179F /* MergedCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB655C305956650024179F /* MergedCalendarView.swift */; };
+		ECBB6563305956650024179F /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB655D305956650024179F /* SampleData.swift */; };
+		ECBB65653059568B0024179F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB65643059568B0024179F /* ContentView.swift */; };
+		ECBB6567305958090024179F /* SwapBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6566305958090024179F /* SwapBoardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E67563013A1324D55ADA95C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2B024E874BC21FEF7023DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42F10FB3935EFE509A108E3 /* ClashGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56DB67062432F428C349BEF /* ClashGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashGuardApp.swift; sourceTree = "<group>"; };
@@ -29,6 +37,16 @@
 		ECBB654C305953850024179F /* DetectClashUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectClashUseCase.swift; sourceTree = "<group>"; };
 		ECBB654D305953850024179F /* FlagShiftForSwapUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagShiftForSwapUseCase.swift; sourceTree = "<group>"; };
 		ECBB654E305953850024179F /* ImportRosterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportRosterUseCase.swift; sourceTree = "<group>"; };
+		ECBB6552305956370024179F /* ClashAlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashAlertViewModel.swift; sourceTree = "<group>"; };
+		ECBB6553305956370024179F /* ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewModel.swift; sourceTree = "<group>"; };
+		ECBB6554305956370024179F /* MergedCalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedCalendarViewModel.swift; sourceTree = "<group>"; };
+		ECBB655A305956650024179F /* ClashAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashAlertView.swift; sourceTree = "<group>"; };
+		ECBB655B305956650024179F /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		ECBB655C305956650024179F /* MergedCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedCalendarView.swift; sourceTree = "<group>"; };
+		ECBB655D305956650024179F /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		ECBB655E305956650024179F /* SwapBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapBoardView.swift; sourceTree = "<group>"; };
+		ECBB65643059568B0024179F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECBB6566305958090024179F /* SwapBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapBoardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,11 @@
 		2632B2DB11BCD31D1903E3E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECBB655A305956650024179F /* ClashAlertView.swift */,
+				ECBB655B305956650024179F /* ImportView.swift */,
+				ECBB655C305956650024179F /* MergedCalendarView.swift */,
+				ECBB655D305956650024179F /* SampleData.swift */,
+				ECBB655E305956650024179F /* SwapBoardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,8 +108,8 @@
 		CCDAF57748430EDB9D3E7CE8 /* ClashGuard */ = {
 			isa = PBXGroup;
 			children = (
+				ECBB65643059568B0024179F /* ContentView.swift */,
 				B56DB67062432F428C349BEF /* ClashGuardApp.swift */,
-				1E67563013A1324D55ADA95C /* ContentView.swift */,
 				A2B024E874BC21FEF7023DAF /* Assets.xcassets */,
 				2632B2DB11BCD31D1903E3E2 /* Views */,
 				FA7370FB7FB5A2BB6B4EA3C2 /* ViewModels */,
@@ -110,6 +133,10 @@
 		FA7370FB7FB5A2BB6B4EA3C2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ECBB6566305958090024179F /* SwapBoardViewModel.swift */,
+				ECBB6552305956370024179F /* ClashAlertViewModel.swift */,
+				ECBB6553305956370024179F /* ImportViewModel.swift */,
+				ECBB6554305956370024179F /* MergedCalendarViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,10 +214,19 @@
 				ECBB6550305953850024179F /* DetectClashUseCase.swift in Sources */,
 				ECBB6551305953850024179F /* FlagShiftForSwapUseCase.swift in Sources */,
 				6BE9E4998CF6885FC00D8BB8 /* ClashGuardApp.swift in Sources */,
-				B1058AD6F579C4FCA7ACCBC1 /* ContentView.swift in Sources */,
 				ECBB654930594F890024179F /* ClashRecord.swift in Sources */,
 				ECBB654A30594F890024179F /* RosterShift.swift in Sources */,
 				ECBB654B30594F890024179F /* AcademicDeadline.swift in Sources */,
+				ECBB65653059568B0024179F /* ContentView.swift in Sources */,
+				ECBB6556305956370024179F /* ImportViewModel.swift in Sources */,
+				ECBB6557305956370024179F /* MergedCalendarViewModel.swift in Sources */,
+				ECBB655F305956650024179F /* SwapBoardView.swift in Sources */,
+				ECBB6560305956650024179F /* ImportView.swift in Sources */,
+				ECBB6561305956650024179F /* ClashAlertView.swift in Sources */,
+				ECBB6562305956650024179F /* MergedCalendarView.swift in Sources */,
+				ECBB6567305958090024179F /* SwapBoardViewModel.swift in Sources */,
+				ECBB6563305956650024179F /* SampleData.swift in Sources */,
+				ECBB6559305956370024179F /* ClashAlertViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

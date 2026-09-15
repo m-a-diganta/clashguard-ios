@@ -1,20 +1,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var importViewModel = ImportViewModel()
+    @StateObject private var calendarViewModel = MergedCalendarViewModel()
+    @StateObject private var clashAlertViewModel = ClashAlertViewModel()
+    @StateObject private var swapBoardViewModel = SwapBoardViewModel()
+
     var body: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "calendar.badge.exclamationmark")
-                .font(.system(size: 48))
-                .foregroundStyle(.teal)
+        TabView {
+            ImportView(viewModel: importViewModel, onImport: importSampleData)
+                .tabItem {
+                    Label("Import", systemImage: "square.and.arrow.down")
+                }
 
-            Text("ClashGuard")
-                .font(.largeTitle)
-                .bold()
+            MergedCalendarView(viewModel: calendarViewModel)
+                .tabItem {
+                    Label("Calendar", systemImage: "calendar")
+                }
 
-            Text("Roster and deadline clash detector")
-                .foregroundStyle(.secondary)
+            ClashAlertView(viewModel: clashAlertViewModel, swapBoardViewModel: swapBoardViewModel)
+                .tabItem {
+                    Label("Clashes", systemImage: "exclamationmark.triangle")
+                }
+
+            SwapBoardView(viewModel: swapBoardViewModel)
+                .tabItem {
+                    Label("Swap Board", systemImage: "arrow.left.arrow.right")
+                }
         }
-        .padding()
+    }
+
+    private func importSampleData() {
+        calendarViewModel.shifts = SampleData.shifts()
+        calendarViewModel.deadlines = SampleData.deadlines()
+        clashAlertViewModel.loadClashes(
+            shifts: calendarViewModel.shifts,
+            deadlines: calendarViewModel.deadlines
+        )
     }
 }
 
