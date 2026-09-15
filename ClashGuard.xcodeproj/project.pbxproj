@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5922E9B7EBD25DB23968D205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B024E874BC21FEF7023DAF /* Assets.xcassets */; };
 		6BE9E4998CF6885FC00D8BB8 /* ClashGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56DB67062432F428C349BEF /* ClashGuardApp.swift */; };
 		B1058AD6F579C4FCA7ACCBC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67563013A1324D55ADA95C /* ContentView.swift */; };
-		5922E9B7EBD25DB23968D205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B024E874BC21FEF7023DAF /* Assets.xcassets */; };
+		ECBB654930594F890024179F /* ClashRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654730594F890024179F /* ClashRecord.swift */; };
+		ECBB654A30594F890024179F /* RosterShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654830594F890024179F /* RosterShift.swift */; };
+		ECBB654B30594F890024179F /* AcademicDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB654630594F890024179F /* AcademicDeadline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B42F10FB3935EFE509A108E3 /* ClashGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B56DB67062432F428C349BEF /* ClashGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashGuardApp.swift; sourceTree = "<group>"; };
 		1E67563013A1324D55ADA95C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2B024E874BC21FEF7023DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B42F10FB3935EFE509A108E3 /* ClashGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56DB67062432F428C349BEF /* ClashGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashGuardApp.swift; sourceTree = "<group>"; };
+		ECBB654630594F890024179F /* AcademicDeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicDeadline.swift; sourceTree = "<group>"; };
+		ECBB654730594F890024179F /* ClashRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashRecord.swift; sourceTree = "<group>"; };
+		ECBB654830594F890024179F /* RosterShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterShift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EDD0390CBA8B35627A7CC94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B42F10FB3935EFE509A108E3 /* ClashGuard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C94539743BD59E324EDC0B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		2632B2DB11BCD31D1903E3E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3DF9FE7BD6F46469FB8378A0 = {
 			isa = PBXGroup;
 			children = (
@@ -38,12 +66,11 @@
 			);
 			sourceTree = "<group>";
 		};
-		1EDD0390CBA8B35627A7CC94 /* Products */ = {
+		9D8D78C76C88E4F1FEBE4618 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				B42F10FB3935EFE509A108E3 /* ClashGuard.app */,
 			);
-			name = Products;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		CCDAF57748430EDB9D3E7CE8 /* ClashGuard */ = {
@@ -61,11 +88,14 @@
 			path = ClashGuard;
 			sourceTree = "<group>";
 		};
-		2632B2DB11BCD31D1903E3E2 /* Views */ = {
+		E71A28A9EC09227B16032E77 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				ECBB654630594F890024179F /* AcademicDeadline.swift */,
+				ECBB654730594F890024179F /* ClashRecord.swift */,
+				ECBB654830594F890024179F /* RosterShift.swift */,
 			);
-			path = Views;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		FA7370FB7FB5A2BB6B4EA3C2 /* ViewModels */ = {
@@ -73,27 +103,6 @@
 			children = (
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		24C94539743BD59E324EDC0B /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		E71A28A9EC09227B16032E77 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		9D8D78C76C88E4F1FEBE4618 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +176,94 @@
 			files = (
 				6BE9E4998CF6885FC00D8BB8 /* ClashGuardApp.swift in Sources */,
 				B1058AD6F579C4FCA7ACCBC1 /* ContentView.swift in Sources */,
+				ECBB654930594F890024179F /* ClashRecord.swift in Sources */,
+				ECBB654A30594F890024179F /* RosterShift.swift in Sources */,
+				ECBB654B30594F890024179F /* AcademicDeadline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		81229D2DC28A091DBAB4BAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D741D2868C1E4D4735904A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diganta.ClashGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D992392F115F5B6C61A3B536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diganta.ClashGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
 		EDC22D19A88212052D32D17A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -205,85 +296,6 @@
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
-		};
-		81229D2DC28A091DBAB4BAEE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D992392F115F5B6C61A3B536 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diganta.ClashGuard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		9D741D2868C1E4D4735904A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diganta.ClashGuard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
